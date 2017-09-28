@@ -9,6 +9,6 @@ for (var y = 0;y < num ;y++){
 			str=str+"#";
 		}
   	};
-	str = str + "/n"
+	str = str + "\n"
 };
 console.log(str)
