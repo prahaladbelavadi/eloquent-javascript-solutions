@@ -1,11 +1,24 @@
 // Your code here.
-function range(start, end){
+function range(start, end, step){
 var arr = [];
-  for (var i = start;i < end;i++){
+  if(step == null){
+    for (var i = start;i < end;i++){
 	arr.push(i)
 	return arr
 	}
-}
+  }else if(step < 0){
+    for (var i = start;i < end;i=i-step){
+	arr.push(i)
+	return arr
+	}
+  }
+  else{
+  for (var i = start;i < end;i=i+step){
+	arr.push(i)
+	return arr
+		}
+	}
+}  
 function sum(x){
 var su = 0;
   for (var i; i < x.length; i++){
