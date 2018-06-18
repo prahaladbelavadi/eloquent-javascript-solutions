@@ -1,15 +1,17 @@
-var todoList = [];
+// Abstracting array traversal
+var array = [1, 2, 3];
 
-function rememberTo(Task) {
-
-  todoList.push(task);
-
+for (var i = 0; i < array.length; i++) {
+  var current = array[i];
+  console.log(current);
 }
 
-function whatIsNext() {
-  return todoList.shift();
+console.log('Neew');
+
+function logEach(array) {
+  for (var i = 0; i < array.length; i++) {
+    console.log(array[i]);
+  }
 }
 
-function urgentlyRememberTo(Task) {
-  todoList.unshift(task);
-}
+logEach(array);
